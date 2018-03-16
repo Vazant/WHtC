@@ -35,21 +35,21 @@ def user_greeting():
     hour = now.hour
 
     if today == now.day and 6 <= hour < 12:
-        WHtC_bot.send_message(last_chat_id, 'Доброе утро, {}'.format(last_chat_name))
+        WHtC_bot.send_message(bot_dialog().last_chat_id, 'Доброе утро, {}'.format(bot_dialog().last_chat_name))
         today += 1
 
     elif today == now.day and 12 <= hour < 17:
-        WHtC_bot.send_message(last_chat_id, 'Добрый день, {}'.format(last_chat_name))
+        WHtC_bot.send_message(bot_dialog().last_chat_id, 'Добрый день, {}'.format(bot_dialog().last_chat_name))
         today += 1
 
     elif today == now.day and 17 <= hour < 23:
-        WHtC_bot.send_message(last_chat_id, 'Добрый вечер, {}'.format(last_chat_name))
+        WHtC_bot.send_message(bot_dialog().last_chat_id, 'Добрый вечер, {}'.format(bot_dialog().last_chat_name))
         today += 11
 
 def photo_from_computer():
 
     new_photo()
-    WHtC_bot.send_photo(last_chat_id, photo=open('new_photo.jpg', 'rb'))
+    WHtC_bot.send_photo(bot_dialog().last_chat_id, photo=open('new_photo.jpg', 'rb'))
 
 
 
