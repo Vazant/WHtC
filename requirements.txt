@@ -2,7 +2,7 @@ certifi==2018.1.18
 chardet==3.0.4
 idna==2.6
 numpy==1.14.1
-opencv-contrib-python==3.4.0.12
+opencv-contrib-python==4.2.0.32
 pipenv==11.6.3
 plyer==1.3.0
 PyQt5==5.10.1
